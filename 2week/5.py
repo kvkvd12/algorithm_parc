@@ -1,17 +1,17 @@
-# def solution(absolutes, signs):
-#     sum = 0
-#     a = absolutes.strip("[""]").split(",")
-#     b = signs.strip("[""]").split(",")
+def solution(absolutes, signs):
+    sum = 0
+    a = absolutes.strip("[""]").split(",")
+    b = signs.strip("[""]").split(",")
     
-#     for i in range(len(b)):
-#         if b[i]=="false":
-#             b[i] = -1
-#         else:
-#             b[i] = 1
-#         sum += int(a[i])*b[i]
-#     return sum
+    for i in range(len(b)):
+        if b[i]=="false":
+            b[i] = -1
+        else:
+            b[i] = 1
+        sum += int(a[i])*b[i]
+    return sum
 
-# print(solution(input(), input()))
+print(solution(input(), input()))
 
 
 # def solution(absolutes, signs):
